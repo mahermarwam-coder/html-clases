@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxury Restaurant Menu</title>
+
+
+<style>
+
+/* BODY */
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:70px;
+
+    /* TYPOGRAPHY */
+    text-transform:uppercase;
+    letter-spacing:5px;
+
+    /* TEXT SHADOW */
+    text-shadow:5px 5px 10px black;
+
+    margin-bottom:10px;
+}
+
+.tagline{
+    font-size:22px;
+    color:gold;
+    font-style:italic;
+}
+
+/* MAIN CONTAINER */
+.container{
+    width:85%;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+/* SECTION TITLES */
+.section-title{
+    font-size:40px;
+
+    /* TEXT DECORATION */
+    text-decoration:underline;
+
+    color:gold;
+
+    margin-top:50px;
+    margin-bottom:20px;
+
+    text-shadow:2px 2px 5px black;
+}
+
+/* MENU GRID */
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:25px;
+}
+
+/* MENU CARD */
+.card{
+    background:rgba(255,255,255,0.12);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    /* BOX SHADOW */
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
+
+    backdrop-filter:blur(5px);
+
+    transition:0.4s;
+}
+
+/* TRANSFORM */
+.card:hover{
+    transform:scale(1.05) rotate(1deg);
+}
+
+/* DISH NAME */
+.card h3{
+    font-size:28px;
+
+    color:gold;
+
+    /* TEXT TRANSFORM */
+    text-transform:capitalize;
+
+    margin-bottom:10px;
+}
+
+/* DESCRIPTION */
+.card p{
+    font-size:17px;
+
+    line-height:1.7;
+
+    /* TEXT INDENT */
+    text-indent:20px;
+}
+
+/* PRICE */
+.price{
+    font-size:24px;
+    margin-top:15px;
+    font-weight:bold;
+    color:#00ff99;
+}
+
+/* SPECIAL OFFER */
+.offer{
+    margin-top:60px;
+
+    background:gold;
+
+    color:black;
+
+    text-align:center;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.6);
+
+    transition:0.4s;
+}
+
+.offer:hover{
+    transform:scale(1.03);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    font-size:18px;
+    color:#ddd;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Royal Taste</h1>
+
+    <p class="tagline">
+        Fine Dining • Luxury Experience • Fresh Food
+    </p>
+</header>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+
+    <!-- STARTERS -->
+    <h2 class="section-title">Starters</h2>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <h3>Garlic Bread</h3>
+
+            <p>
+                Crispy toasted bread with garlic butter,
+                mozzarella cheese, and fresh herbs.
+            </p>
+
+            <div class="price">$8</div>
+        </div>
+
+        <div class="card">
+            <h3>Chicken Soup</h3>
+
+            <p>
+                Creamy chicken soup with vegetables,
+                herbs, and rich chicken flavor.
+            </p>
+
+            <div class="price">$10</div>
+        </div>
+
+    </div>
+
+    <!-- MAIN COURSE -->
+    <h2 class="section-title">Main Course</h2>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <h3>Grilled Steak</h3>
+
+            <p>
+                Premium grilled steak served with
+                roasted vegetables and special sauce.
+            </p>
+
+            <div class="price">$25</div>
+        </div>
+
+        <div class="card">
+            <h3>Pasta Alfredo</h3>
+
+            <p>
+                Creamy Alfredo pasta with mushrooms,
+                parmesan cheese, and grilled chicken.
+            </p>
+
+            <div class="price">$20</div>
+        </div>
+
+        <div class="card">
+            <h3>Classic Burger</h3>
+
+            <p>
+                Juicy beef burger with cheddar cheese,
+                lettuce, tomato, and crispy fries.
+            </p>
+
+            <div class="price">$18</div>
+        </div>
+
+    </div>
+
+    <!-- DESSERT -->
+    <h2 class="section-title">Desserts</h2>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <h3>Chocolate Cake</h3>
+
+            <p>
+                Soft chocolate cake with melted chocolate
+                topping and vanilla ice cream.
+            </p>
+
+            <div class="price">$12</div>
+        </div>
+
+        <div class="card">
+            <h3>Ice Cream</h3>
+
+            <p>
+                Vanilla and strawberry ice cream with
+                chocolate syrup and nuts.
+            </p>
+
+            <div class="price">$9</div>
+        </div>
+
+    </div>
+
+    <!-- SPECIAL OFFER -->
+    <div class="offer">
+        🔥 SPECIAL OFFER: 20% OFF ON ALL PASTA EVERY FRIDAY 🔥
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Royal Taste Restaurant | Dubai
+</footer>
+
+</body>
+</html>
