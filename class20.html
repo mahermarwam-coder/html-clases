@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+
+
+</head>
+
+
+
+<body>
+    <h1>Basic functions in javascript</h1>
+    <button onclick="execute(10,5)">Execute Js Function</button>
+    <script>
+        function execute(a, b) {
+
+            var a, b;
+            document.write("The sum of the numbers is " + (a + b));
+
+        }
+    
+
+    </script>
+    <hr>
+    <h1>Scope of Variables in Functions</h1>
+    <button onclick="myFunction()">click me</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        var a=10;
+        function myFunction() {
+            var b=20;
+      //      document.getElementById("demo").innerHTML =a;
+        }
+        document.getElementById("demo1").innerHTML =a;
+    </script>
+
+
+
+</body>
+
+
+</html>
