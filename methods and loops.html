@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+
+
+
+
+</head>
+
+
+
+
+<body>
+<h2>Methods String Javascript</h2>
+
+<p>Numbers from 1 to 10:</p>
+<p id="result"></p>
+<script>
+var numbers = "";
+for (var i = 1; i <= 10; i++) {
+    numbers += i + " ";
+}
+numbers += "<br>";
+document.write("the random value is " + Math.floor(Math.random() * 10));
+</script>
+
+<hr>
+
+<h1>Switch in JS </h1>
+
+<p id="demo1"></p>
+<script>
+var day;
+switch(new Date().getDay()){
+    case 0:
+        day="Sunday";
+        break;
+    case 1:
+        day="Monday";
+        break;
+    case 2:
+        day="Tuesday";
+        break;
+    case 3:
+        day="Wednesday";
+        break;
+    case 4:
+        day="Thursday";
+        break;
+    case 5:
+        day="Friday";
+        break;
+    case 6:
+        day="Saturday";
+}
+document.getElementById("demo1").innerHTML="Today is " + day;
+</script>
+<hr>
+
+<h2>Javascript For Loop</h2>
+<p id="demo"></p>
+
+<script>
+    var friuts = ["Apple", "Banana", "Mango", "Grapes", "Orange", "watermelon"];
+    var text = "";
+    var i;
+    for (i = 0; i < friuts.length; i++) {
+        text += friuts[i] + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+
+
+
+
+
+
+</html>
