@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather Web</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<style>
+    body {
+        background-image: url('https://static.vecteezy.com/system/resources/thumbnails/023/133/298/small_2x/dark-blue-texture-with-cloudy-sky-vector.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }   
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05) translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    } 
+    
+    </style>
+
+    <div>
+        <h1 class="text-center text-white" >Weather web</h1>
+
+    </div>
+
+    <div class="card text-center" style="width: 18rem; margin: auto; margin-top: 50px;">
+        <div class="card-body">
+            <h5 class="card-title">Weather Information</h5>
+           <p>temperature: 50°C<div id="temperature"></div></p>
+            <p>humidity: 45%<div id="humidity"></div></p>
+            <p>wind speed: 25km/h<div id="windSpeed"></div>
+
+           </p>
+            <p class="card-text">Get more of  the latest weather updates for your location.</p>
+            <a href="https://www.uaeweather.ae/" class="btn btn-primary">Check Weather</a>
+        </div>
+
+    </div>
+    <br>
+
+    <footer>
+        <p class="text-center text-white">© 2026 Weather Web. All rights reserved.</p>
+    </footer>
+</body>
+
+
+</html>
