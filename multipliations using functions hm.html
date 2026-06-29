@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Multiplications Using Functions</title>
+
+</head>
+
+
+
+<body>
+    <button onclick="multiply(4)">
+        Click me!
+    </button>
+    <p id="result"></p>
+
+    <script>
+        function multiply(a, b) {
+            if (b === undefined) {
+                alert("Please provide a defined value for the second parameter.");
+                b = 5;
+                a = 6;
+            }
+            var result = a * b;
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+
+</body>
+
+
+
+
+</html>
