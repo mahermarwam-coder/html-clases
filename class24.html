@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>My Zoo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #300496;
+            margin: 30px;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #zoo {
+            border: 3px solid #ca1616;
+            padding: 10px;
+            background-color: #2ec995;
+            margin: 16px auto;
+            width: 300px;
+        }
+
+        .zone {
+            margin: 5px 0;
+
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+ 
+    </style>
+
+
+
+</head>
+
+
+<body>
+    <h1>My Zoo</h1>
+    <p>Use JavaScript and the DOM to add animals to each cage!</p>
+
+
+    <div id="zoo">
+        <div class="zone">zone 1: <span class="zone1"></span></div>
+        <div class="zone">zone 2: <span class="zone2"></span></div>
+        <div class="zone">zone 3: <span class="zone3"></span></div>
+        <div class="zone">Total Animals: <span id="total"></span></div>
+    </div>
+    <br>
+    <button onclick="openZoo()">Open Zoo</button>
+    <p id="zoo-status"></p>
+
+    <script>
+
+        function openZoo() {
+            document.getElementById("zone1").innerHTML = "Lion";
+            document.getElementById("zone2").innerHTML = "Elephant";
+            document.getElementById("zone3").innerHTML = "Giraffe";
+            document.getElementById("total").innerHTML = "3";
+            document.getElementById("zoo").style.backgroundColor = "lightgreen";
+            document.getElementById("zoo-status").innerHTML = "Zoo is now open!";
+        }
+    </script>
+</body>
+
+
+</html>
