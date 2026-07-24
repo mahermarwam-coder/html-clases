@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+
+</head>
+
+
+
+<body>
+
+
+    <h1>my game profile </h1>
+
+    <button onclick="showprofile()">Show Profile</button>
+
+
+    <div>name: <span id="name"></span></div>
+    <div>score: <span id="score"></span></div>
+    <div>top score: <span id="topscore"></span></div>
+    <div>rank: <span id="rank"></span></div>
+    <div>Greetings: <span id="greeting"></span></div>
+    <div>Stars: <span id="stars"></span></div>
+    <div>Bonus level: <span id="bonuslevel"></span></div>
+    <div>Team name: <span id="team"></span></div>
+
+
+<script>
+
+function showprofile() {
+
+//variables
+let name =    "Adam maher";
+let myScore =  5000;
+let myTopScore =  6000;
+let myBonus =   null;
+
+
+//comparsion operators
+let isTopScore = myScore == myTopScore;
+
+//if else - rank 
+let rank;
+if (myScore > 5000) {
+    rank = "Pro";
+} else if (myScore > 2000) {
+    rank = "Intermediate";
+} else {
+    rank = "Beginner";
+
+
+
+}
+
+
+//Date object-Greetings
+let hour =  new Date().getHours();
+let greeting;
+
+if (hour < 12) {
+    greeting = "Good morning!";
+} else if (hour < 18) {
+    greeting = "Good afternoon!";
+} else {
+    greeting = "Good evening!";
+}
+
+
+//while loop - stars
+let stars = "";
+let count = 0;
+while (count<5) {
+    stars =  stars + "⭐";
+    count = count + 1;
+}
+
+
+//string concatenation - show on page
+document.getElementById("name").innerHTML = name;
+document.getElementById("score").innerHTML = myScore + " (Top Score: " + myTopScore + ")";
+document.getElementById("topscore").innerHTML = myTopScore;
+document.getElementById("rank").innerHTML = rank;
+document.getElementById("greeting").innerHTML = greeting;
+document.getElementById("stars").innerHTML = stars;
+document.getElementById("bonuslevel").innerHTML = myBonus ? "Unlocked" : "Locked";
+document.getElementById("team").innerHTML = "Team Alpha";
+
+}
+
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+
+</html>
