@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Objects Data Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f4c81, #1d8f8f);
+            text-align: center;
+            color: #f7f3e9;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.12);
+            border: 2px solid #ffffff55;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        #output {
+            border: 2px dashed #ffd166;
+            border-radius: 12px;
+            background-color: #1f1f1f;
+            padding: 16px;
+            text-align: left;
+            color: #f7f3e9;
+            line-height: 1.6;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+    <div class="container">
+        <h1>JavaScript Objects Data Structure and Array</h1>
+        <div id="output">
+            <script>
+                var student = [{
+                    name: "Adam", age: 12, grade: "A"
+                }];
+
+                var color = {
+                    white: "white", black: "black", red: "red", blue: "blue", green: "green"
+                };
+
+                document.write("Student Name: " + student[0].name + "<br>");
+                document.write("Student Age: " + student[0].age + "<br>");
+                document.write("Student Grade: " + student[0].grade + "<br>");
+                document.write("<br>Before color poping: the colors are: " + color.white + ", " + color.black + ", " + color.red + ", " + color.blue + ", " + color.green + "<br>");
+                document.write("my favorite color is: " + color.red + "<br>");
+                color.red = "purple";
+                document.write("After color poping: the colors are: " + color.white + ", " + color.black + ", " + color.red + ", " + color.blue + ", " + color.green + "<br>");
+            </script>
+        </div>
+    </div>
+</body>
+</html>
